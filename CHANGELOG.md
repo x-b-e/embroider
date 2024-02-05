@@ -1,4 +1,113 @@
 # Embroider Changelog
+## Release (2024-02-05)
+
+@embroider/addon-dev 5.0.0 (major)
+@embroider/babel-loader-9 4.0.0 (major)
+@embroider/broccoli-side-watch 0.1.0 (minor)
+@embroider/compat 4.0.0 (major)
+@embroider/core 4.0.0 (major)
+@embroider/hbs-loader 4.0.0 (major)
+@embroider/macros 2.0.0 (major)
+@embroider/router 3.0.0 (major)
+@embroider/shared-internals 2.5.2 (patch)
+@embroider/test-setup 4.0.0 (major)
+@embroider/util 1.12.2 (patch)
+@embroider/vite 1.0.0 (major)
+@embroider/webpack 4.0.0 (major)
+
+#### :boom: Breaking Change
+* `@embroider/compat`, `@embroider/core`, `@embroider/test-support`, `@embroider/test-scenarios`
+  * [#1653](https://github.com/embroider-build/embroider/pull/1653) Refactor embroider-implicit-modules export pojo ([@mansona](https://github.com/mansona))
+* `@embroider/compat`, `@embroider/macros`, `@embroider/webpack`, `@embroider/test-fixtures`, `@embroider/test-scenarios`
+  * [#1692](https://github.com/embroider-build/embroider/pull/1692) force importSync to always be eager ([@mansona](https://github.com/mansona))
+* `@embroider/addon-dev`
+  * [#1697](https://github.com/embroider-build/embroider/pull/1697) Hide base path from public URL of rollup-public-assets ([@simonihmig](https://github.com/simonihmig))
+
+#### :rocket: Enhancement
+* `@embroider/addon-dev`, `@embroider/vite`
+  * [#1784](https://github.com/embroider-build/embroider/pull/1784) Bump content-tag and add inline_source_map option for rollup and vite ([@vstefanovic97](https://github.com/vstefanovic97))
+* `@embroider/core`, `@embroider/hbs-loader`, `@embroider/vite`, `@embroider/webpack`
+  * [#1763](https://github.com/embroider-build/embroider/pull/1763) Add new watches API ([@ef4](https://github.com/ef4))
+* `@embroider/addon-dev`, `@embroider/test-scenarios`
+  * [#1760](https://github.com/embroider-build/embroider/pull/1760) Add exclude option to appReexports and publicEntrypoints rollup plugins ([@simonihmig](https://github.com/simonihmig))
+  * [#1642](https://github.com/embroider-build/embroider/pull/1642) Allow for more flexible addon-dev appReexports ([@krasnoukhov](https://github.com/krasnoukhov))
+* `@embroider/compat`, `@embroider/core`, `@embroider/vite`, `@embroider/test-scenarios`, `vite-app`
+  * [#1739](https://github.com/embroider-build/embroider/pull/1739) support ts, gts and gjs in vite ([@patricklx](https://github.com/patricklx))
+* `@embroider/core`, `@embroider/vite`, `@embroider/test-support`, `@embroider/test-scenarios`, `vite-app`
+  * [#1718](https://github.com/embroider-build/embroider/pull/1718) vite test ci ([@patricklx](https://github.com/patricklx))
+* `@embroider/vite`
+  * [#1680](https://github.com/embroider-build/embroider/pull/1680) [vite] use transform instead of load for gjs & hbs files ([@patricklx](https://github.com/patricklx))
+  * [#1704](https://github.com/embroider-build/embroider/pull/1704) add correct extensions to optimizeDeps() config ([@mansona](https://github.com/mansona))
+* `@embroider/core`, `@embroider/vite`, `@embroider/webpack`
+  * [#1707](https://github.com/embroider-build/embroider/pull/1707) improved resolver logging ([@ef4](https://github.com/ef4))
+* `@embroider/broccoli-side-watch`
+  * [#1693](https://github.com/embroider-build/embroider/pull/1693) Add broccoli-side-watch package ([@balinterdi](https://github.com/balinterdi))
+* `@embroider/compat`, `@embroider/core`, `@embroider/vite`
+  * [#1650](https://github.com/embroider-build/embroider/pull/1650) Add Esbuild resolver ([@mansona](https://github.com/mansona))
+* `@embroider/compat`, `@embroider/core`, `@embroider/test-scenarios`
+  * [#1648](https://github.com/embroider-build/embroider/pull/1648) use package paths instead of relative paths for app tree resolving ([@mansona](https://github.com/mansona))
+
+#### :bug: Bug Fix
+* `@embroider/core`, `@embroider/shared-internals`, `@embroider/test-scenarios`
+  * [#1762](https://github.com/embroider-build/embroider/pull/1762) Fix incorrect ownerOfFile at root of filesystem ([@ef4](https://github.com/ef4))
+* `@embroider/shared-internals`
+  * [#1758](https://github.com/embroider-build/embroider/pull/1758) Make template-colocation-plugin idempotent ([@ef4](https://github.com/ef4))
+  * [#1738](https://github.com/embroider-build/embroider/pull/1738) fix vite on windows ([@patricklx](https://github.com/patricklx))
+* `vite-app`
+  * [#1731](https://github.com/embroider-build/embroider/pull/1731) Vite fixes ([@mansona](https://github.com/mansona))
+* `@embroider/vite`
+  * [#1729](https://github.com/embroider-build/embroider/pull/1729) remove missing import from vite index ([@mansona](https://github.com/mansona))
+  * [#1713](https://github.com/embroider-build/embroider/pull/1713) esbuild: fix babel config location ([@mansona](https://github.com/mansona))
+* `@embroider/compat`, `@embroider/core`, `@embroider/vite`, `@embroider/webpack`, `@embroider/test-support`, `@embroider/test-scenarios`
+  * [#1686](https://github.com/embroider-build/embroider/pull/1686) Resolver bugfixes ([@mansona](https://github.com/mansona))
+
+#### :memo: Documentation
+* Other
+  * [#1791](https://github.com/embroider-build/embroider/pull/1791) docs(porting-addons-to-v2): Explain no-unpublished-required issue ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+  * [#1772](https://github.com/embroider-build/embroider/pull/1772) Docs porting addons to v2 co location ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+  * [#1775](https://github.com/embroider-build/embroider/pull/1775) Docs(peer deps resolution issues): mentions pnpm-dedupe and add links ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+  * [#1768](https://github.com/embroider-build/embroider/pull/1768) docs(porting addons to v2): change the recommended package manager to pnpm ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+  * [#1765](https://github.com/embroider-build/embroider/pull/1765) Docs(addon-author-guide)/ remove the out-of-date part about alternative to monorepos ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+* `@embroider/macros`
+  * [#1790](https://github.com/embroider-build/embroider/pull/1790) Update @embroider/macros README.md real-world examples ([@machty](https://github.com/machty))
+
+#### :house: Internal
+* Other
+  * [#1778](https://github.com/embroider-build/embroider/pull/1778) Fix failing addon-dev-js test on main ([@simonihmig](https://github.com/simonihmig))
+  * [#1700](https://github.com/embroider-build/embroider/pull/1700) Merge stable into main ([@mansona](https://github.com/mansona))
+* `@embroider/compat`, `@embroider/core`, `@embroider/shared-internals`, `@embroider/test-scenarios`, `@types/ember-cli`
+  * [#1782](https://github.com/embroider-build/embroider/pull/1782) Merge stable into main ([@mansona](https://github.com/mansona))
+* `@embroider/test-scenarios`
+  * [#1781](https://github.com/embroider-build/embroider/pull/1781) Fix failing addon-dev-js test on stable ([@simonihmig](https://github.com/simonihmig))
+  * [#1703](https://github.com/embroider-build/embroider/pull/1703) Disable chokidar polling override in tests ([@chancancode](https://github.com/chancancode))
+* `@embroider/test-scenarios`, `vite-app`
+  * [#1771](https://github.com/embroider-build/embroider/pull/1771) Simplify vite-app template ([@ef4](https://github.com/ef4))
+* `@embroider/compat`, `@embroider/macros`, `@embroider/test-scenarios`
+  * [#1714](https://github.com/embroider-build/embroider/pull/1714) update scenario-tester ([@mansona](https://github.com/mansona))
+* `@embroider/test-support`, `@embroider/test-scenarios`
+  * [#1740](https://github.com/embroider-build/embroider/pull/1740) enable vite windows tests ([@patricklx](https://github.com/patricklx))
+* `@embroider/core`, `@embroider/vite`, `@embroider/test-support`, `@embroider/test-scenarios`, `vite-app`
+  * [#1718](https://github.com/embroider-build/embroider/pull/1718) vite test ci ([@patricklx](https://github.com/patricklx))
+* `@embroider/addon-dev`, `@embroider/compat`, `@embroider/core`, `@embroider/macros`
+  * [#1723](https://github.com/embroider-build/embroider/pull/1723) Sync stable->main ([@ef4](https://github.com/ef4))
+* `@embroider/addon-dev`, `@embroider/compat`
+  * [#1721](https://github.com/embroider-build/embroider/pull/1721) Merge stable into main ([@mansona](https://github.com/mansona))
+* `@embroider/macros`
+  * [#1712](https://github.com/embroider-build/embroider/pull/1712) Merge stable ([@ef4](https://github.com/ef4))
+* `@embroider/compat`, `@embroider/shared-internals`
+  * [#1691](https://github.com/embroider-build/embroider/pull/1691) Move fix for @ember-data/debug into virtualPeerDeps ([@mansona](https://github.com/mansona))
+
+#### Committers: 10
+- Alex Matchneer ([@machty](https://github.com/machty))
+- Balint Erdi ([@balinterdi](https://github.com/balinterdi))
+- Chris Manson ([@mansona](https://github.com/mansona))
+- Dmitry Krasnoukhov ([@krasnoukhov](https://github.com/krasnoukhov))
+- Edward Faulkner ([@ef4](https://github.com/ef4))
+- Godfrey Chan ([@chancancode](https://github.com/chancancode))
+- Marine Dunstetter ([@BlueCutOfficial](https://github.com/BlueCutOfficial))
+- Patrick Pircher ([@patricklx](https://github.com/patricklx))
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+- Vuk ([@vstefanovic97](https://github.com/vstefanovic97))
 ## Release (2023-12-23)
 
 @embroider/compat 3.4.3 (patch)
